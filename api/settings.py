@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+import os 
 
 from pathlib import Path
 
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-47aoxw*qlfzznvdg06d&ci8=pt#a4e#yd5+-$w(^_%o$xnq9!1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','127.0.1:8000']
 
 
 # Application definition
@@ -123,3 +124,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL="/image/"
+MEDIA_ROOT= os .path.join (BASE_DIR'image')
+
+
+
+DEFAULT_AUTO_FIELD= 'DJANGO . db . models.Big auto field'
